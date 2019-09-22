@@ -27,8 +27,8 @@ for iter = 1:num_iters
     J_history(iter) = computeCost(X, y, theta);
   
 	
-	COST_1 = sum( (X * theta - y )' * X(: , 1)	);
-	COST_2 = sum( (X * theta - y )' * X(: , 2)	) ;
+	COST_1 = sum( (X * theta - y )' * X(: , 1) );
+	COST_2 = sum( (X * theta - y )' * X(: , 2) ) ;
 	
 	theta(1) = theta(1) - ( alpha * COST_1 )/m; 
 	theta(2) = theta(2) - ( alpha * COST_2 )/m; 
